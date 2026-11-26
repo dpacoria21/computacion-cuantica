@@ -13,6 +13,7 @@ con Qiskit 2.6.2 y qiskit-ibm-runtime 0.52.1 (ya instalados en `.venv`).
 | `02_bell_state.py` | **Parte 1** del tutorial: estado de Bell + 6 observables con el Estimator | Solo con `--hardware` |
 | `03_ghz_100_qubits.py` | **Parte 2** del tutorial: estado GHZ de 100 qubits | Solo con `--hardware` |
 | `04_recuperar_job.py` | Recupera el resultado de un job por su ID (si cerraste la terminal) | Sí |
+| `05_bernstein_vazirani.py` | **Problema propuesto:** adivinar un número secreto con una sola consulta (Sampler) | Solo con `--hardware` |
 | `hello_world.ipynb` | Todo el tutorial en notebook (variable `USAR_HARDWARE`) | Solo si `USAR_HARDWARE = True` |
 | `resultados/` | Gráficas `.png`, valores `.txt` y `job_ids.txt` | — |
 
@@ -76,6 +77,25 @@ Cada job imprime su **Job ID** y lo anota en `resultados/job_ids.txt`. Si la col
 
 En VS Code: abre `hello_world.ipynb` y elige el kernel/intérprete `.venv`.
 Cambia `USAR_HARDWARE = True` en la segunda celda para usar hardware real.
+
+## Problema propuesto: Bernstein–Vazirani
+
+Una caja negra esconde un número secreto `s` de n bits y, para cada `x`, responde
+`f(x) = s · x (mod 2)`. Clásicamente se necesitan n consultas (una por bit); el
+algoritmo cuántico lo encuentra con **una sola consulta**. Usa el primitivo
+**Sampler** (conteos), a diferencia del Hello World que usa el Estimator.
+
+```powershell
+.\.venv\Scripts\python.exe 05_bernstein_vazirani.py
+```
+
+```powershell
+.\.venv\Scripts\python.exe 05_bernstein_vazirani.py --hardware
+```
+
+Opciones: `--secreto 110101` para otro número y `--shots 4000` para cambiar las repeticiones.
+Con el secreto `1011` se obtuvo el resultado correcto en el 91.9 % de los shots en el simulador
+(fake_guadalupe) y en el 90.8 % en hardware real (ibm_kingston).
 
 ## Resultados esperados
 

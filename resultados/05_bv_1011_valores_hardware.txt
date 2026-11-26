@@ -1,0 +1,14 @@
+Backend: ibm_kingston (hardware)
+Job ID: dc49nuls2omc738f1bng
+Secreto: 1011  (n = 4 bits, 5 qubits)
+Shots: 4000
+Resultado mas frecuente: 1011  -> CORRECTO
+Probabilidad de medir el secreto: 0.9075
+Consultas al oraculo: cuantico = 1, clasico = 4
+
+Top 5 resultados (bits: conteo):
+  1011: 3630
+  0011: 158
+  1001: 85
+  1010: 75
+  0000: 20
