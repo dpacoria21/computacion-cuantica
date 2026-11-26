@@ -1,0 +1,10 @@
+Backend: ibm_fez (hardware)
+Job ID: dc4975ls2omc738f08r0
+
+Observable   Valor     Error
+IZ            0.0254   0.0099
+IX           -0.0061   0.0125
+ZI            0.0241   0.0093
+XI           -0.0021   0.0147
+ZZ            0.9502   0.0086
+XX            0.9519   0.0073

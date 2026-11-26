@@ -1,0 +1,7 @@
+# Versiones probadas para el tutorial "Hello world" de IBM Quantum
+qiskit[visualization]~=2.6.2
+qiskit-ibm-runtime~=0.52.1
+qiskit-aer~=0.18.4
+matplotlib
+jupyter
+ipykernel

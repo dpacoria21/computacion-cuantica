@@ -1,0 +1,10 @@
+Backend: fake_belem (simulador)
+Job ID: 2cdb4092-6919-4f9e-9726-15c4ccb8d22d
+
+Observable   Valor     Error
+IZ            0.0229   0.0147
+IX            0.0116   0.0157
+ZI            0.0223   0.0133
+XI            0.0026   0.0147
+ZZ            0.9870   0.0095
+XX            0.9731   0.0096
